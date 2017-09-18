@@ -1,16 +1,17 @@
 
 
-fizz = "Fizz"
-buzz = "Buzz"
-num = 0
+def factorial(num):
+   for n in range(1,num):
+        num = num * n
+   print "Factorial:", num
+   return;
 
-while num <= 100:
-    if num % 3 == 0 and num % 5 == 0:
-        print(fizz + buzz)
-    elif num % 5 == 0:
-        print(buzz)
-    elif num % 3 == 0:
-        print(fizz)
-    else:
-        print(num)
-    num+=1
+def Sum(num):
+   for n in range(1,num):
+        num = num + n
+   print "Sum:", num
+   return;
+
+
+factorial(10)
+Sum(2)
