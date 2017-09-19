@@ -1,4 +1,4 @@
-# FizzBuzz - Problem 4
+# FizzBuzz - Problem 3
 
 
 fizz = "Fizz"

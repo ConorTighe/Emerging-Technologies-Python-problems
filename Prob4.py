@@ -1,4 +1,4 @@
-# Factorial - Problem 3
+# Factorial - Problem 4
 
 def factorial(num):
    sum = 0

@@ -1,4 +1,5 @@
-#Guessing game
+#Guessing game - problem 5
+
 import random
 
 number = 0
