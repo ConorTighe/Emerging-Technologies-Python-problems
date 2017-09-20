@@ -28,5 +28,5 @@ def LargestAndSmallest (nums, size):
 
 largest, smallest = LargestAndSmallest(numbers, listSize)
 
-print("The largest numer in the list is %s " % largest)
-print("The smallest numer in the list is %s " % smallest)
+print("The largest number in the list is %s " % largest)
+print("The smallest number in the list is %s " % smallest)
