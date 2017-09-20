@@ -1,21 +1,32 @@
 # Smallest and largest in list
 import random
 
-numbers = [2,4,6,1,3,7,9,10,5,8]
-smallest = 1
-largest = 1
+numbers = []
+smallest = 0
+largest = 0
 cnt = 0
+listSize = 100
 
-while cnt <= 10:
-    i = random.randint(1, 20)
+#Create random list
+while cnt < 10:
+    i = random.randint(1, listSize)
     cnt+=1
     numbers.append(i)
 
-for x in numbers:
-    print(x)
-    if smallest < x:
-        smallest = x
-    if largest > x:
-        largest = x
+# Function for finding largest and smallest
+def LargestAndSmallest (nums, size):
+    s = size + 1
+    l = 0
 
-print("The largest numer in the list is %s and the smallest is %s", largest, smallest)
+    for x in nums:
+        print(x)
+        if s > x:
+            s = x
+        if l < x:
+            l = x
+    return l,s
+
+largest, smallest = LargestAndSmallest(numbers, listSize)
+
+print("The largest numer in the list is %s " % largest)
+print("The smallest numer in the list is %s " % smallest)
