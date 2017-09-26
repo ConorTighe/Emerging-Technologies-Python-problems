@@ -8,7 +8,9 @@ cnt=0
 List1Len = len(myList1)
 List2Len = len(myList2)
 size = (List1Len + List2Len)-1
-print(size)
+print(myList1)
+print(myList2)
+print("total numbers in both lists:", size+1)
 
 while cnt < size:
     if myList1[i] < myList2[j]:
@@ -29,5 +31,6 @@ if myList1[List1Len] < myList2[List2Len]:
 elif myList1[List1Len] > myList2[List2Len]:
     fullList.append(myList1[List1Len])
 
+print("Combined ordered list: ")
 for l in fullList:
-    print("full:",l)
+    print(l)
